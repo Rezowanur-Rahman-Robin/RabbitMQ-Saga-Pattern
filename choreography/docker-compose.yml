@@ -3,7 +3,7 @@ version: '3.8'
 services:
   rabbitmq:
     image: rabbitmq:management
-    container_name: rabbitmq
+    container_name: rabbitmq-2
     ports:
       - "5672:5672"
       - "15672:15672"
@@ -20,7 +20,7 @@ services:
 
   order-service:
     build: ./order-service
-    container_name: order-service
+    container_name: order-service-2
     ports:
      - "3001:3001"
     networks:
@@ -31,7 +31,7 @@ services:
 
   inventory-service:
     build: ./inventory-service
-    container_name: inventory-service
+    container_name: inventory-service-2
     ports:
      - "3002:3002"
     networks:
@@ -42,7 +42,7 @@ services:
 
   payment-service:
     build: ./payment-service
-    container_name: payment-service
+    container_name: payment-service-2
     ports:
      - "3003:3003"
     networks:
@@ -53,7 +53,7 @@ services:
 
   notification-service:
     build: ./notification-service
-    container_name: notification-service
+    container_name: notification-service-2
     ports:
      - "3004:3004"
     networks:
