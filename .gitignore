@@ -1,0 +1,48 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Environment variables
+.env
+
+# Docker files
+docker-compose.override.yml
+docker-compose.override.yaml
+docker-compose.*.yml
+docker-compose.*.yaml
+*.env
+
+# Build directories
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Package lock files
+package-lock.json
+
+# Specific service directories
+order-service/node_modules/
+payment-service/node_modules/
+warehouse-service/node_modules/
+saga-orchestrator/node_modules/
+
+# Ignore specific package-lock.json files if needed
+order-service/package-lock.json
+payment-service/package-lock.json
+warehouse-service/package-lock.json
+saga-orchestrator/package-lock.json 
